@@ -27,6 +27,7 @@ steps:
     command: 'build'
     projects: '$(solution)'
     arguments: '--configuration $(buildConfiguration)'
+
 - task: SonarQubeAnalyze@5
 
 - task: CopyFiles@2
