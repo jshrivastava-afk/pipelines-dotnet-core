@@ -17,9 +17,9 @@ steps:
 
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'sonarsec'
+    SonarQube: 'Sonarqube'
     scannerMode: 'MSBuild'
-    projectKey: 'Dot-net_pipelines-dotnet-core'
+    projectKey: 'Dot-net_pipelines-dotnet-core_AYFr4sWnLIuZhE3StBbu'
     projectName: 'pipelines-dotnet-core'
 
 - task: SonarQubeAnalyze@5
