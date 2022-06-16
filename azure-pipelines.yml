@@ -22,6 +22,11 @@ steps:
     projectKey: 'Dot-net_pipelines-dotnet-core_AYFr4sWnLIuZhE3StBbu'
     projectName: 'pipelines-dotnet-core'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+    arguments: '--configuration $(buildConfiguration)'
 - task: SonarQubeAnalyze@5
 
 - task: CopyFiles@2
